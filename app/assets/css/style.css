@@ -21,8 +21,7 @@ body {
   transition: all .4s .3s ease-in; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -391,13 +390,24 @@ textarea {
   /* 2 */ }
 
 .logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
-.nav ul {
-  list-style: none; }
+.nav {
+  background-color: black;
+  border-bottom: 5px solid #f89f1f; }
+  .nav ul {
+    list-style: none; }
+    .nav ul li a {
+      font-size: 1em;
+      color: red; }
+
+.page {
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid red; }
 
 * {
   box-sizing: border-box; }

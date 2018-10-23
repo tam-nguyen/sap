@@ -1,9 +1,13 @@
 .nav {
+  background-color: black;
+
+  border-bottom: 5px solid #f89f1f;
   ul {
     list-style: none;
     li {
       a {
-
+        font-size: 1em;
+        color: red;
       }
     }
   }

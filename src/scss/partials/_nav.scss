@@ -1,13 +1,17 @@
-.nav {
+nav {
   background-color: black;
 
   border-bottom: 5px solid #f89f1f;
   ul {
-    list-style: none;
+
+    justify-content: center;
+    
     li {
+      margin-left: 30px;
+      margin-right: 30px;
       a {
-        font-size: 1em;
-        color: red;
+        font-size: 1.5em;
+        color:#fff;
       }
     }
   }

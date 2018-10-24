@@ -1,3 +1,6 @@
+## Demo
+> https://hardcore-shirley-346aec.netlify.com/
+
 ## Project setup and Gulp installation
 FastShell utilises open source components running on the Terminal/command-line for it's workflow, you'll need to install Node and Gulp. Here's a walkthrough of how to get a project up and running in minutes. Once Node and Gulp are installed all future projects running Gulp are instant.
 

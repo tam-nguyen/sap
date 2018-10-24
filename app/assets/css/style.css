@@ -396,10 +396,16 @@ textarea {
       justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px; }
-  .logo .left-logo img {
-    max-width: 70px; }
-  .logo .right-logo img {
-    max-width: 300px; }
+  .logo .left-logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+    .logo .left-logo img {
+      max-width: 70px; }
+  .logo .right-logo {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+    .logo .right-logo img {
+      max-width: 300px; }
 
 nav {
   background-color: black;
@@ -420,7 +426,7 @@ nav {
   border: 1px solid red; }
 
 .headline {
-  background-color: #01A0B8;
+  background: url("../../assets/img/dotted_map_white.png") center center #01A0B8;
   color: #fff;
   height: 33vh;
   position: relative; }

@@ -9,30 +9,34 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link href="assets/css/style.min.css" rel="stylesheet">
 
   <script src="assets/js/scripts.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="page">
     <header>
-      <div class="logo">
-        <div class="left-logo">
-          <img src="assets/img/ert-logo.png">
-        </div>
-        <div class="right-logo">
-          <img src="assets/img/sap-logo.png">
-        </div>
 
+      <div class="container">
+        <div class="logo">
+          <div class="left-logo">
+            <img src="assets/img/ert-logo.png">
+          </div>
+          <div class="right-logo">
+            <img src="assets/img/sap-logo.png">
+          </div>
+
+        </div>
       </div>
 
-
       <nav>
-        <ul  class="nav">
+        <ul class="nav">
           <li>
             <a href="/">Home</a>
           </li>
@@ -54,7 +58,7 @@
     </header>
 
 
-    
+
 
 
 
@@ -63,96 +67,166 @@
       <main id="main">
         <!-- Slideshow container -->
         <div class="slideshow">
-          
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/img/img-1.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/img-2.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/img-3.jpg" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/img-1.jpg" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/img-2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/img-3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
 
         </div>
         <!-- headline text -->
         <div class="headline">
-          <p>Berlin:</p>
-          <p>A Taste of the Past and the Present</p>
-          <p>17-19 November 2018 | Hosted by Julie and Bill McDermott</p>
+          <div class="container">
+            <div class="row">
+              <h4>Berlin:<br />
+                A Taste of the Past and the Present</h4>
+              <p>17-19 November 2018 | Hosted by Julie and Bill McDermott</p>
+            </div>
+          </div>
+
+
         </div>
 
-        <!-- main contain-->
-        <div class="main-contain">
+        <!-- main content-->
+        <div class="main-content">
 
           <!-- intro -->
           <div class="intro">
-            <div class="container-fluid">
-              <div class="col-xs-6 col-md-4">
-                <h1>Welcome to Berlin!</h1>
-                <ul class="intro-sidebar">
-                  <li><img src="assets/img/welcome-1.png" style="width:100%"></li>
-                  <li><img src="assets/img/welcome-2.png" style="width:100%"></li>
-                  <li><img src="assets/img/welcome-3.png" style="width:100%"></li>
-                </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6 col-md-4 text-center">
+                  <h4 class="content-title">Welcome to Berlin!</h4>
+                  <ul class="intro-sidebar">
+                    <li><img src="assets/img/welcome-1.png"></li>
+                    <li><img src="assets/img/welcome-2.png"></li>
+                    <li><img src="assets/img/welcome-3.png"></li>
+                  </ul>
 
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-8">
-                <h4>Berlin is orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                  dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                  Donec
-                  qu</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-                  magnis
-                  dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                  pretium
-                  quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-                  eget,
-                  arcu. In enim justo, rhoncus ut, imperdiet a</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-                  magnis
-                  dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                  pretium
-                  quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-                  eget,
-                  arcu. In enim justo, rhoncus ut, imperdiet a</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                  <h4>Berlin is, without a doubt, one of Europe’s most-renowned cities, and for very good reason. From
+                    its youthful energy and ground-breaking tech scene to its historical architecture and political
+                    prestige, this is a city that brims with innovation and character.</h4>
+                  <p>
+
+                    As part of this social programme, we will explore vestiges of Berlin’s layered past whilst also
+                    discovering the promise of Germany’s future. It is celebrated for its engineering feats, its
+                    spectacular museums and its magnificent World Heritage Sites, not to mention its world-class
+                    culinary
+                    scene, arts and culture. From an exciting events calendar to a rich tapestry of pre and post-war
+                    architecture, Berlin’s heritage leaves a lasting impression on everyone who spends time here. And
+                    attracting close to a million visitors each year, the world-famous Berlin Wall has been dubbed the
+                    longest open-air gallery in the world.
+                  </p>
+                  <p>
+                    Berlin’s past has of course, at times, been dark and complex. This vast metropolis comprises some
+                    intriguing and varied layers and has been imaginatively reborn over recent years. The Golden
+                    Twenties
+                    in particular, was a particularly colourful era for the city. It was during this interwar period,
+                    dubbed The Weimar Republic, when Germany’s culture and literature was flourishing. Berliners lived
+                    life to the full and the city saw an injection of politically provocative arts, as well as a boom
+                    in
+                    pioneering work across science and literature. This convivial era, which coincided with hedonistic
+                    parties and political freedom, lasted until the inception of Nazi rule and is looked back on with
+                    great nostalgia. Today, remnants of Weimar culture can still be glimpsed across the city in the way
+                    of retro movie theatres, quirky jazz bars and iconic art institutions. Important monuments which
+                    symbolise Berlin’s more promising future following the fall of the Berlin Wall, can also be
+                    discovered across the city. The Brandenburg Gate is of course, one of the most famous, and
+                    celebrates
+                    peace and unity for the country.
+                  </p>
+                  <p>
+                    The creative spirit is still palpable in Berlin and it now boasts one of the fastest-growing
+                    start-up
+                    scenes in the world. Offering a true taste of this entrepreneurial culture, Silicon Allee, is
+                    located
+                    in the heart of Berlin Mitte and is an ‘embassy’ to the city’s thriving start-up scene. Playing
+                    home
+                    to some of Europe’s most successful innovators, Silicon Allee uncovers inspiring co-working and
+                    co-living spaces, exciting independent businesses and a diverse community of tech entrepreneurs.
+                    This
+                    thriving campus also hosts leading digital conferences and events and is well and truly leading the
+                    way for the digital age.
+                  </p>
+                  <p>
+                    If your heart leads with your taste buds, Berlin will win you over with its exciting culinary
+                    scene.
+                    No longer limited to the traditional bratwurst and bier, Berlin’s gastronomy has earned prestige
+                    amongst food critics from all over the world. From artisanal start-ups to Michelin Star-worthy
+                    dining, it is fast becoming a world-class food and drink destination.
+                  </p>
+                  <p>
+                    We are delighted to host you for this special event and we think you will agree, Berlin is a
+                    special
+                    city. Your social programme at the ERT has been carefully designed to help you enjoy a world-class
+                    experience of award-winning chefs, exquisite hospitality, top influential speakers and unmissable
+                    sights and attractions. We look forward to showing you a sample of the very best of Germany’s
+                    capital
+                    city and hope you have a truly memorable and inspiring time together. </p>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- intro -->
           <div class="social-programme">
-            <div class="container-fluid">
+            <div class="container">
+              <h4 class="content-title">Social Programme</h4>
+              <div class="row social-programme-inner text-center">
+              
               <div class="social-programme-item">
                 <img src="assets/img/social-programme-item1-img.png" />
                 <h4>Celegrating the Golden Twenties</h4>
                 <h5>An evening at The Secret Garden</h5>
                 <button class="social-programme-bt">Read More</button>
               </div>
+              
               <div class="social-programme-item">
+                  <img src="assets/img/social-programme-item1-img.png" />
+                  <h4>Celegrating the Golden Twenties</h4>
+                  <h5>An evening at The Secret Garden</h5>
+                  <button class="social-programme-bt">Read More</button>
+                </div>
+              <div class="social-programme-item">
+                  <img src="assets/img/social-programme-item1-img.png" />
+                  <h4>Celegrating the Golden Twenties</h4>
+                  <h5>An evening at The Secret Garden</h5>
+                  <button class="social-programme-bt">Read More</button>
+                </div>
+              <div class="social-programme-item">
+                  <img src="assets/img/social-programme-item1-img.png" />
+                  <h4>Celegrating the Golden Twenties</h4>
+                  <h5>An evening at The Secret Garden</h5>
+                  <button class="social-programme-bt">Read More</button>
+                </div>
 
-              </div>
+
+
+            </div>
+
             </div>
           </div>
 
@@ -161,7 +235,19 @@
       </main>
     </div>
     <footer>
-      footer
+        <div class="container">
+          <div class="row footer-inner">
+
+            <div class="copy-right">
+                <p>2018 SAP SE or an SAP affiliate company. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/">Privacy</a>
+                <a href="/">Contact</a>
+            </div>
+          </div>
+          
+        </div>
     </footer>
   </div>
 </body>

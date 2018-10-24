@@ -4,4 +4,16 @@
 .logo {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .left-logo{
+    img{
+      max-width: 70px;
+    }
+  }
+  .right-logo{
+    img{
+      max-width: 300px;
+    }
+  }
 }

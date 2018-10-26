@@ -1,22 +1,22 @@
-header{
-  .desktop-logo{
-    display: none;
-  }
-}
-.logo {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  .left-logo{
-    img{
-      width: 70px;
+header {
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .left-logo {
+      img {
+        width: 70px;
+      }
     }
-  }
-  .right-logo{
-    .mobile-logo{
-      width: 102px;
-      margin-left: 30px;
+    .right-logo {
+      .mobile-logo {
+        width: 102px;
+        margin-left: 30px;
+      }
+      .desktop-logo {
+        display: none;
+      }
     }
   }
 }
@@ -24,10 +24,10 @@ header{
 nav {
   border-bottom: 5px solid #f89f1f;
   min-height: 30px;
-  .navbar-toggler{
+  .navbar-toggler {
     position: absolute;
-    top:-90px;
-    right:0;
+    top: -90px;
+    right: 0;
     border: 1px dotted red !important;
     font-size: 1.7em;
   }
@@ -43,12 +43,33 @@ nav {
         &:hover {
           color: #f89f1f;
         }
+        &:active {
+          color: #f89f1f;
+        }
+
       }
     }
   }
 }
 
-@media (min-width: 576px) {
-}
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  header {
+    .logo {
+      justify-content: space-between;
+      .right-logo {
+        .desktop-logo {
+          width: 300px;
+          display: block;
+        }
+        .mobile-logo {
+          display: none;
+        }
+      }
+    }
+  }
+  nav{
+    #navbarNav{
+      justify-content: center;
+    }
+  }
 }

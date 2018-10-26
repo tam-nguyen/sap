@@ -12,6 +12,17 @@
   }
 
 }
+.navbar-light .navbar-toggler-icon{
+  background: url(/assets/img/menu-without-text.png) center center no-repeat;
+  width: 100%;
+  &:after{
+    content: "Menu";
+    bottom: -35px;
+    position: relative;
+    color: #000;
+    font-size: 19px;
+  }
+}
 .headline {
   background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
   color: #fff;

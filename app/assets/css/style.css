@@ -411,7 +411,8 @@ nav {
     position: absolute;
     top: -90px;
     right: 0;
-    font-size: 1.7em; }
+    font-size: 1.7em;
+    border: none; }
   nav ul {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -463,6 +464,16 @@ h4 {
 .carousel-indicators .active {
   background-color: #fff;
   opacity: 1; }
+
+.navbar-light .navbar-toggler-icon {
+  background: url(/assets/img/menu-without-text.png) center center no-repeat;
+  width: 100%; }
+  .navbar-light .navbar-toggler-icon:after {
+    content: "Menu";
+    bottom: -35px;
+    position: relative;
+    color: #000;
+    font-size: 19px; }
 
 .headline {
   background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
@@ -609,6 +620,9 @@ footer {
     footer .footer-inner .footer-links a {
       font-size: 1.5em;
       color: #fff; } }
+
+button:focus {
+  outline: none; }
 
 @font-face {
   font-family: 'Font-Name';

@@ -432,6 +432,14 @@ h2 {
   font-weight: bold;
   margin: 0; }
 
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 30px 0; }
+
+h4 {
+  font-size: 1em; }
+
 .headline {
   background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
   color: #fff;
@@ -460,52 +468,39 @@ h2 {
   position: relative;
   z-index: 9; }
 
-.intro ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .intro ul li {
-    margin: 50px 0; }
-    .intro ul li img {
-      width: 100%; }
+.intro h2 {
+  margin: 20px 0; }
 
-.social-programme-inner {
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .social-programme-inner .social-programme-item {
-    width: 48%;
-    border: 1px solid #efefef;
-    padding: 35px 20px;
+.intro ul {
+  display: none; }
+
+.social-programme-inner .social-programme-item {
+  border: 1px solid #efefef;
+  padding: 35px 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 30px #aaaaaa; }
+  .social-programme-inner .social-programme-item img {
+    width: 100%; }
+  .social-programme-inner .social-programme-item button {
+    background-color: #01a0b8;
+    padding: 12px 100px;
     margin-top: 30px;
-    box-shadow: 0 0 30px #aaaaaa; }
-    .social-programme-inner .social-programme-item img {
-      width: 100%; }
-    .social-programme-inner .social-programme-item h4 {
-      font-size: 1.875em;
-      margin: 40px 0; }
-    .social-programme-inner .social-programme-item h5 {
-      font-size: 1.5em;
-      margin-bottom: 40px; }
-    .social-programme-inner .social-programme-item button {
-      background-color: #01a0b8;
-      padding: 12px;
-      font-size: 1.3em;
-      color: #fff; }
+    font-size: 1.3em;
+    color: #fff; }
 
 footer {
   margin-top: 50px;
   background-color: #000;
-  padding: 62px 0; }
+  padding: 25px 0; }
   footer .footer-inner {
     -ms-flex-pack: justify;
         justify-content: space-between; }
     footer .footer-inner .copy-right {
-      font-size: 1.375em;
+      margin-top: 10px;
+      font-size: 0.625em;
       color: #fff; }
-    footer .footer-inner .footer-links {
-      font-size: 1.5em; }
-      footer .footer-inner .footer-links a {
-        color: #fff; }
+    footer .footer-inner .footer-links a {
+      color: #fff; }
 
 @media (min-width: 768px) {
   .headline:after {
@@ -518,7 +513,33 @@ footer {
     position: absolute;
     background: #fff;
     border-radius: 100%;
-    border: 10px solid #f89f1f; } }
+    border: 10px solid #f89f1f; }
+  .intro ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .intro ul li {
+      margin: 50px 0; }
+      .intro ul li img {
+        width: 100%; }
+  .social-programme-inner {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .social-programme-inner .social-programme-item {
+      width: 48%; }
+      .social-programme-inner .social-programme-item img {
+        width: 100%; }
+      .social-programme-inner .social-programme-item h4 {
+        font-size: 1.875em;
+        margin: 40px 0; }
+      .social-programme-inner .social-programme-item h5 {
+        font-size: 1.5em;
+        margin-bottom: 40px; }
+      .social-programme-inner .social-programme-item button {
+        background-color: #01a0b8;
+        padding: 12px;
+        font-size: 1.3em;
+        color: #fff; } }
 
 @font-face {
   font-family: 'Font-Name';

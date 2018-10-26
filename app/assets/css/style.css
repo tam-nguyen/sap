@@ -406,11 +406,13 @@ header .logo {
 
 nav {
   border-bottom: 5px solid #f89f1f;
-  min-height: 30px; }
+  min-height: 30px;
+  position: relative;
+  background-color: #000; }
   nav .navbar-toggler {
     position: absolute;
     top: -90px;
-    right: 0;
+    right: 15px;
     font-size: 1.7em;
     border: none; }
   nav ul {
@@ -425,34 +427,11 @@ nav {
         nav ul li a:hover {
           color: #f89f1f; }
         nav ul li a:active {
-          color: #f89f1f; }
-
-@media (min-width: 992px) {
-  header .logo {
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    header .logo .right-logo .desktop-logo {
-      width: 300px;
-      display: block; }
-    header .logo .right-logo .mobile-logo {
-      display: none; }
-  nav #navbarNav {
-    -ms-flex-pack: center;
-        justify-content: center; } }
-
-h2 {
-  font-size: 1.875em;
-  line-height: 1.875em;
-  font-weight: bold;
-  margin: 0; }
-
-h3 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin: 30px 0; }
-
-h4 {
-  font-size: 1em; }
+          color: #f89f1f;
+          text-decoration: underline; }
+        nav ul li a:visited {
+          color: #f89f1f;
+          text-decoration: underline; }
 
 .carousel-indicators li {
   width: 8px;
@@ -474,6 +453,45 @@ h4 {
     position: relative;
     color: #000;
     font-size: 19px; }
+
+.carousel-indicators {
+  z-index: 1; }
+
+.navbar-collapse {
+  position: absolute;
+  top: 8px;
+  background-color: black;
+  right: 0px;
+  width: 85%;
+  z-index: 99; }
+
+@media (min-width: 992px) {
+  header .logo {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    header .logo .right-logo .desktop-logo {
+      width: 300px;
+      display: block; }
+    header .logo .right-logo .mobile-logo {
+      display: none; }
+  nav #navbarNav {
+    position: initial;
+    -ms-flex-pack: center;
+        justify-content: center; } }
+
+h2 {
+  font-size: 1.875em;
+  line-height: 1.875em;
+  font-weight: bold;
+  margin: 0; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 30px 0; }
+
+h4 {
+  font-size: 1em; }
 
 .headline {
   background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;

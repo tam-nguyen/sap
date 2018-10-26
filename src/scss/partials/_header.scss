@@ -24,10 +24,12 @@ header {
 nav {
   border-bottom: 5px solid #f89f1f;
   min-height: 30px;
+  position: relative;
+  background-color: #000;
   .navbar-toggler {
     position: absolute;
     top: -90px;
-    right: 0;
+    right: 15px;
     font-size: 1.7em;
     border: none;
   }
@@ -45,13 +47,52 @@ nav {
         }
         &:active {
           color: #f89f1f;
+          text-decoration: underline;
         }
-
+        &:visited {
+          color: #f89f1f;
+          text-decoration: underline;
+        }
       }
     }
   }
 }
+.carousel-indicators{
+  li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: 0.5;
+  }
+  .active{
+    background-color: #fff;
+    opacity: 1;
+  }
 
+}
+.navbar-light .navbar-toggler-icon{
+  background: url(/assets/img/menu-without-text.png) center center no-repeat;
+  width: 100%;
+  &:after{
+    content: "Menu";
+    bottom: -35px;
+    position: relative;
+    color: #000;
+    font-size: 19px;
+  }
+}
+.carousel-indicators{
+  z-index: 1;
+}
+.navbar-collapse{
+    position: absolute;
+    top: 8px;
+    background-color: black;
+    right: 0px;
+    width: 85%;
+    z-index: 99;
+}
 @media (min-width: 992px) {
   header {
     .logo {
@@ -69,6 +110,7 @@ nav {
   }
   nav{
     #navbarNav{
+      position: initial;
       justify-content: center;
     }
   }

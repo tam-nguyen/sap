@@ -389,27 +389,31 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+header .desktop-logo {
+  display: none; }
+
 .logo {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-align: end;
+      align-items: flex-end;
   margin-top: 30px;
   margin-bottom: 30px; }
-  .logo .left-logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start; }
-    .logo .left-logo img {
-      max-width: 70px; }
-  .logo .right-logo {
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
-    .logo .right-logo img {
-      max-width: 300px; }
+  .logo .left-logo img {
+    width: 70px; }
+  .logo .right-logo .mobile-logo {
+    width: 102px;
+    margin-left: 30px; }
 
 nav {
-  background-color: black;
-  border-bottom: 5px solid #f89f1f; }
+  border-bottom: 5px solid #f89f1f;
+  min-height: 30px; }
+  nav .navbar-toggler {
+    position: absolute;
+    top: -90px;
+    right: 0;
+    border: 1px dotted red !important;
+    font-size: 1.7em; }
   nav ul {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -422,40 +426,39 @@ nav {
         nav ul li a:hover {
           color: #f89f1f; }
 
-.page {
-  border: 1px solid red; }
+h2 {
+  font-size: 1.875em;
+  line-height: 1.875em;
+  font-weight: bold;
+  margin: 0; }
 
 .headline {
-  background: url("../../assets/img/dotted_map_white.png") center center #01A0B8;
+  background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
   color: #fff;
-  height: 33vh;
-  position: relative; }
-  .headline h4 {
-    font-size: 3.75em;
-    margin-top: 30px; }
-  .headline p {
-    font-size: 2.25em; }
+  position: relative;
+  padding: 30px 0; }
+  .headline .date {
+    font-size: 1.5em;
+    font-weight: 500; }
+    .headline .date:after {
+      content: "\A";
+      white-space: pre; }
+  .headline .author {
+    font-weight: bold; }
   .headline .headline-bt img {
     width: 100%; }
   .headline:after {
     content: "";
     display: block;
-    width: 102%;
-    left: -14px;
-    height: 162px;
-    bottom: -88px;
+    width: 100%;
     position: absolute;
-    background: #fff;
-    border-radius: 100%;
-    border: 10px solid #f89f1f; }
+    bottom: 0;
+    border: 4px solid #f89f1f; }
 
 .main-content {
   background-color: #fff;
   position: relative;
   z-index: 9; }
-
-.content-title {
-  font-size: 3em; }
 
 .intro ul {
   list-style: none;
@@ -484,7 +487,7 @@ nav {
       font-size: 1.5em;
       margin-bottom: 40px; }
     .social-programme-inner .social-programme-item button {
-      background-color: #01A0B8;
+      background-color: #01a0b8;
       padding: 12px;
       font-size: 1.3em;
       color: #fff; }
@@ -503,6 +506,19 @@ footer {
       font-size: 1.5em; }
       footer .footer-inner .footer-links a {
         color: #fff; }
+
+@media (min-width: 768px) {
+  .headline:after {
+    content: "";
+    display: block;
+    width: 102%;
+    left: -14px;
+    height: 162px;
+    bottom: -88px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    border: 10px solid #f89f1f; } }
 
 @font-face {
   font-family: 'Font-Name';

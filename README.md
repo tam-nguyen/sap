@@ -1,5 +1,6 @@
->> Download app folder to your local and run app/index.html
->> SCSS file is in src/scss
+Download app folder to your local and run app/index.html
+
+SCSS file is in src/scss
 
 ## Demo
 > https://hardcore-shirley-346aec.netlify.com/

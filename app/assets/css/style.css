@@ -412,7 +412,7 @@ nav {
   nav .navbar-toggler {
     position: absolute;
     top: -90px;
-    right: 15px;
+    right: 10px;
     font-size: 1.7em;
     border: none; }
   nav ul {

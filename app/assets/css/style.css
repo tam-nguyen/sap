@@ -411,7 +411,6 @@ nav {
     position: absolute;
     top: -90px;
     right: 0;
-    border: 1px dotted red !important;
     font-size: 1.7em; }
   nav ul {
     -ms-flex-pack: center;
@@ -453,6 +452,17 @@ h3 {
 
 h4 {
   font-size: 1em; }
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  opacity: 0.5; }
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1; }
 
 .headline {
   background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;

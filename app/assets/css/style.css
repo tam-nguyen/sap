@@ -637,9 +637,9 @@ footer {
     height: 8px;
     border-radius: 50%;
     border: 1px solid #000;
-    opacity: 0.5; }
+    background-color: #fff; }
   .carousel-indicators .active {
-    background-color: #fff;
+    background-color: #000;
     opacity: 1; }
 
 .carousel-item-desktop {

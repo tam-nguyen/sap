@@ -1,0 +1,29 @@
+.carousel-indicators{
+  z-index: 1;
+    li{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      opacity: 0.5;
+    }
+    .active{
+      background-color: #fff;
+      opacity: 1;
+    }
+  
+  }
+  .carousel-item-desktop{
+    display: none;
+  }
+  @media (min-width: 992px) {
+      .slideshow{
+          .carousel-indicators, .carousel-control-prev, .carousel-control-next, .carousel-inner{
+              display: none;
+          }
+          .carousel-item-desktop{
+            display: block;
+          }
+          
+      }
+  }

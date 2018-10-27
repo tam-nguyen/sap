@@ -29,7 +29,7 @@ nav {
   .navbar-toggler {
     position: absolute;
     top: -90px;
-    right: 10px;
+    left: 86%;
     font-size: 1.7em;
     border: none;
   }
@@ -57,24 +57,10 @@ nav {
     }
   }
 }
-.carousel-indicators{
-  li{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    opacity: 0.5;
-  }
-  .active{
-    background-color: #fff;
-    opacity: 1;
-  }
-
-}
-.navbar-light .navbar-toggler-icon{
+.navbar-light .navbar-toggler-icon {
   background: url(/assets/img/menu-without-text.png) center center no-repeat;
   width: 100%;
-  &:after{
+  &:after {
     content: "Menu";
     bottom: -35px;
     position: relative;
@@ -82,16 +68,13 @@ nav {
     font-size: 19px;
   }
 }
-.carousel-indicators{
-  z-index: 1;
-}
-.navbar-collapse{
-    position: absolute;
-    top: 8px;
-    background-color: black;
-    right: 0px;
-    width: 85%;
-    z-index: 99;
+.navbar-collapse {
+  position: absolute;
+  top: 8px;
+  background-color: black;
+  right: 0px;
+  width: 85%;
+  z-index: 99;
 }
 @media (min-width: 992px) {
   header {
@@ -108,8 +91,8 @@ nav {
       }
     }
   }
-  nav{
-    #navbarNav{
+  nav {
+    #navbarNav {
       position: initial;
       justify-content: center;
     }

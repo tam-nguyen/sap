@@ -412,7 +412,7 @@ nav {
   nav .navbar-toggler {
     position: absolute;
     top: -90px;
-    right: 10px;
+    left: 86%;
     font-size: 1.7em;
     border: none; }
   nav ul {
@@ -433,17 +433,6 @@ nav {
           color: #f89f1f;
           text-decoration: underline; }
 
-.carousel-indicators li {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  opacity: 0.5; }
-
-.carousel-indicators .active {
-  background-color: #fff;
-  opacity: 1; }
-
 .navbar-light .navbar-toggler-icon {
   background: url(/assets/img/menu-without-text.png) center center no-repeat;
   width: 100%; }
@@ -453,9 +442,6 @@ nav {
     position: relative;
     color: #000;
     font-size: 19px; }
-
-.carousel-indicators {
-  z-index: 1; }
 
 .navbar-collapse {
   position: absolute;
@@ -494,10 +480,10 @@ h4 {
   font-size: 1em; }
 
 .headline {
-  background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
   color: #fff;
   position: relative;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #01a0b8; }
   .headline p .date {
     font-size: 1.5em;
     font-weight: 500; }
@@ -556,27 +542,32 @@ h4 {
     font-size: 1.75em; }
   h4 {
     font-size: 1.5em; }
-  .headline h2 {
-    font-size: 3em; }
-    .headline h2 .big-text {
+  #main {
+    overflow: hidden; }
+  .headline {
+    background: url("../../assets/img/dotted_map_white.png") center center #01a0b8;
+    background-size: cover; }
+    .headline h2 {
+      font-size: 3em; }
+      .headline h2 .big-text {
+        font-size: 1.5em; }
+    .headline p .date {
       font-size: 1.5em; }
-  .headline p .date {
-    font-size: 1.5em; }
-    .headline p .date:after {
-      content: " | "; }
-  .headline p .author {
-    font-size: 1.5em; }
-  .headline:after {
-    content: "";
-    display: block;
-    width: 102%;
-    left: -14px;
-    height: 162px;
-    bottom: -88px;
-    position: absolute;
-    background: #fff;
-    border-radius: 100%;
-    border: 10px solid #f89f1f; }
+      .headline p .date:after {
+        content: " | "; }
+    .headline p .author {
+      font-size: 1.5em; }
+    .headline:after {
+      content: "";
+      display: block;
+      width: 208%;
+      left: -54%;
+      height: 782px;
+      bottom: -275%;
+      position: absolute;
+      background: #fff;
+      border-radius: 49%;
+      border: 9px solid #f89f1f; }
   .intro ul {
     display: block;
     list-style: none;
@@ -638,6 +629,27 @@ footer {
     footer .footer-inner .footer-links a {
       font-size: 1.5em;
       color: #fff; } }
+
+.carousel-indicators {
+  z-index: 1; }
+  .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: 0.5; }
+  .carousel-indicators .active {
+    background-color: #fff;
+    opacity: 1; }
+
+.carousel-item-desktop {
+  display: none; }
+
+@media (min-width: 992px) {
+  .slideshow .carousel-indicators, .slideshow .carousel-control-prev, .slideshow .carousel-control-next, .slideshow .carousel-inner {
+    display: none; }
+  .slideshow .carousel-item-desktop {
+    display: block; } }
 
 button:focus {
   outline: none; }

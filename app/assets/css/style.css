@@ -513,6 +513,9 @@ h4 {
 .intro ul {
   display: none; }
 
+.intro .col-lg-8 {
+  padding-top: 37px; }
+
 .social-programme-inner .social-programme-item {
   border: 1px solid #efefef;
   padding: 35px 20px;

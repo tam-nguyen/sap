@@ -594,7 +594,7 @@ hr {
     font-size: initial; }
 
 .modal-dialog {
-  max-width: 55%; }
+  max-width: 45%; }
 
 .social-programme-inner .social-programme-item {
   border: 1px solid #efefef;
@@ -660,7 +660,7 @@ hr {
       margin: 50px 0; }
       .intro ul li img {
         width: 100%; }
-  .intro p .paragraph-big-text {
+  .intro .paragraph-big-text {
     font-size: 1.5em; }
   .main-content .bar {
     background-color: #01a0b8;

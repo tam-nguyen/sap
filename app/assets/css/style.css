@@ -433,18 +433,6 @@ nav {
           list-style-type: none; }
     nav ul li {
       margin: 13px 30px; }
-      nav ul li a {
-        font-size: 1.5em;
-        font-weight: 500;
-        color: #fff; }
-        nav ul li a:hover {
-          color: #f89f1f; }
-        nav ul li a:active {
-          color: #f89f1f;
-          text-decoration: underline; }
-        nav ul li a:visited {
-          color: #f89f1f;
-          text-decoration: underline; }
 
 .navbar-light .navbar-toggler-icon {
   background: url(/assets/img/menu-without-text.png) center center no-repeat;
@@ -505,6 +493,17 @@ hr {
 
 .division {
   border-top: 5px solid #01a0b8; }
+
+a {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff; }
+  a:hover {
+    color: #f89f1f;
+    text-decoration: underline; }
+  a:active {
+    color: #f89f1f;
+    text-decoration: underline; }
 
 .headline {
   color: #fff;

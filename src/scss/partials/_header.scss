@@ -55,22 +55,6 @@ nav {
     }
     li {
       margin: 13px 30px;
-      a {
-        font-size: 1.5em;
-        font-weight: 500;
-        color: #fff;
-        &:hover {
-          color: #f89f1f;
-        }
-        &:active {
-          color: #f89f1f;
-          text-decoration: underline;
-        }
-        &:visited {
-          color: #f89f1f;
-          text-decoration: underline;
-        }
-      }
     }
   }
 }

@@ -500,6 +500,12 @@ h3 {
 h4 {
   font-size: 1em; }
 
+hr {
+  border-top: 1px solid #6E6E6E; }
+
+.division {
+  border-top: 5px solid #01a0b8; }
+
 .headline {
   color: #fff;
   position: relative;
@@ -546,6 +552,23 @@ h4 {
       text-decoration: underline; }
       .main-content .container-small .readmore a:after {
         content: "\25BC"; }
+    .main-content .container-small .agenda-section-title {
+      font-size: 2.25em;
+      color: #01a0b8;
+      font-weight: bold; }
+    .main-content .container-small .agenda-section-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .main-content .container-small .agenda-section-content div:first-child {
+        width: 30%; }
+      .main-content .container-small .agenda-section-content p {
+        font-size: 1.5em;
+        font-weight: bold; }
+      .main-content .container-small .agenda-section-content .agenda-section-content-title .agenda-section-content-title-content p {
+        font-size: 16px;
+        font-weight: initial; }
   .main-content .img-circle-border {
     text-align: center; }
     .main-content .img-circle-border .img-circle-border-item h3 {

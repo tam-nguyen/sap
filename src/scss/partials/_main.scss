@@ -27,13 +27,59 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    border: 4px solid #f89f1f;
+    border: 4px solid $base;
   }
 }
 .main-content {
   background-color: #fff;
   position: relative;
   z-index: 9;
+  h3 {
+    margin: 5px 0;
+  }
+  .bar {
+    background-color: $green;
+    padding: 8px 15px;
+    color: #fff;
+    h3 {
+      font-weight: bold;
+    }
+  }
+  .container-small {
+    margin: 30px;
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .readmore {
+      a {
+        // &:not(.collapsed) {
+        //   &:after {
+        //     content: "\25BC";
+        //     content: "\25B2";
+        //   }
+        // }
+        &:after {
+          content: "\25BC";
+          
+        }
+
+        color: $lightBlack;
+        text-decoration: underline; 
+      }
+    }
+    
+  }
+  .img-circle-border {
+    text-align: center;
+    .img-circle-border-item {
+      h3 {
+        margin-top: 30px;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .intro {
@@ -47,7 +93,23 @@
     padding-top: 37px;
   }
 }
-
+/*popup*/
+.modal-backdrop {
+  display: none;
+}
+.modal {
+  .modal-body {
+    text-align: initial;
+    p {
+      &:first-child {
+        font-size: initial;
+      }
+    }
+  }
+}
+.modal-dialog {
+  max-width: 55%;
+}
 .social-programme-inner {
   .social-programme-item {
     border: 1px solid #efefef;
@@ -121,7 +183,7 @@
       position: absolute;
       background: #fff;
       border-radius: 49%;
-      border: 9px solid #f89f1f;
+      border: 9px solid $base;
     }
   }
   .intro {
@@ -138,8 +200,37 @@
       }
     }
     p {
-      &:first-child {
+      .paragraph-big-text {
         font-size: 1.5em;
+      }
+    }
+  }
+  .main-content {
+    .bar {
+      background-color: #01a0b8;
+      padding: 8px 15px;
+      color: #fff;
+    }
+    h3 {
+      font-size: 2.25em;
+    }
+    .img-circle-border {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      text-align: center;
+      .img-circle-border-item {
+        width: 270px;
+        margin: 0 40px;
+        &:first-child {
+        }
+        h3 {
+          font-weight: bold;
+        }
+        img {
+          border: 10px solid #f7941c;
+        }
       }
     }
   }

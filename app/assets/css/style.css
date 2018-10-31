@@ -23,6 +23,9 @@ body {
 body, html {
   min-height: 100vh; }
 
+img {
+  width: 100%; }
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -418,6 +421,16 @@ nav {
   nav ul {
     -ms-flex-pack: center;
         justify-content: center; }
+    nav ul .dropdown-submenu {
+      position: relative; }
+      nav ul .dropdown-submenu .dropdown-menu-custom {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #000; }
+        nav ul .dropdown-submenu .dropdown-menu-custom li {
+          margin-left: 0;
+          margin-right: 0;
+          list-style-type: none; }
     nav ul li {
       margin: 13px 30px; }
       nav ul li a {
@@ -463,7 +476,15 @@ nav {
   nav #navbarNav {
     position: initial;
     -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center; }
+    nav #navbarNav .dropdown-submenu .dropdown-menu-custom {
+      position: absolute;
+      width: 200%;
+      left: -50%;
+      padding-left: 20px;
+      display: none; }
+    nav #navbarNav .dropdown-submenu:hover .dropdown-menu-custom {
+      display: block; } }
 
 h2 {
   font-size: 1.875em;
@@ -506,6 +527,30 @@ h4 {
   background-color: #fff;
   position: relative;
   z-index: 9; }
+  .main-content h3 {
+    margin: 5px 0; }
+  .main-content .bar {
+    background-color: #01a0b8;
+    padding: 8px 15px;
+    color: #fff; }
+    .main-content .bar h3 {
+      font-weight: bold; }
+  .main-content .container-small {
+    margin: 30px; }
+    .main-content .container-small h4 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-weight: bold; }
+    .main-content .container-small .readmore a {
+      color: #444;
+      text-decoration: underline; }
+      .main-content .container-small .readmore a:after {
+        content: "\25BC"; }
+  .main-content .img-circle-border {
+    text-align: center; }
+    .main-content .img-circle-border .img-circle-border-item h3 {
+      margin-top: 30px;
+      text-decoration: underline; }
 
 .intro h2 {
   margin: 20px 0; }
@@ -515,6 +560,18 @@ h4 {
 
 .intro .col-lg-8 {
   padding-top: 37px; }
+
+/*popup*/
+.modal-backdrop {
+  display: none; }
+
+.modal .modal-body {
+  text-align: initial; }
+  .modal .modal-body p:first-child {
+    font-size: initial; }
+
+.modal-dialog {
+  max-width: 55%; }
 
 .social-programme-inner .social-programme-item {
   border: 1px solid #efefef;
@@ -580,8 +637,30 @@ h4 {
       margin: 50px 0; }
       .intro ul li img {
         width: 100%; }
-  .intro p:first-child {
+  .intro p .paragraph-big-text {
     font-size: 1.5em; }
+  .main-content .bar {
+    background-color: #01a0b8;
+    padding: 8px 15px;
+    color: #fff; }
+  .main-content h3 {
+    font-size: 2.25em; }
+  .main-content .img-circle-border {
+    margin-top: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    text-align: center; }
+    .main-content .img-circle-border .img-circle-border-item {
+      width: 270px;
+      margin: 0 40px; }
+      .main-content .img-circle-border .img-circle-border-item h3 {
+        font-weight: bold; }
+      .main-content .img-circle-border .img-circle-border-item img {
+        border: 10px solid #f7941c; }
   .social-programme-inner {
     display: -ms-flexbox;
     display: flex;
